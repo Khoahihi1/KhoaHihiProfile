@@ -279,8 +279,8 @@
 <style>
     .bio-container .content .top .img_container > img.img:not(.img_effect) {
         display: block;
-        width: 82%;
-        height: 82%;
+        width: 48%;
+        height: 48%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -293,6 +293,13 @@
     .discord_presence_widget .widget_avatar_container {
         position: relative;
         overflow: visible;
+    }
+
+    @media (max-width: 768px) {
+        .bio-container .content .top .img_container > img.img:not(.img_effect) {
+            width: 82%;
+            height: 82%;
+        }
     }
 
     .discord_presence_avatar_effect {
@@ -2639,6 +2646,12 @@
     }
 
     @media (pointer: coarse), (max-width: 768px) {
+        .profile-body-5 .bio-container .bio_content_container .content-container .content .top .img_container > img.img:not(.img_effect),
+        .bio-container .content .top .img_container > img.img:not(.img_effect) {
+            width: 82% !important;
+            height: 82% !important;
+        }
+
         .bio_content_container {
             transform: none !important;
             transform-style: flat !important;
@@ -2650,6 +2663,20 @@
 
         * {
             cursor: auto !important;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .profile-body-5 .bio-container .bio_content_container .content-container .content .top .img_container > img.img:not(.img_effect),
+        .bio-container .content .top .img_container > img.img:not(.img_effect) {
+            width: 82% !important;
+            height: 82% !important;
+            position: absolute !important;
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            border-radius: 50% !important;
+            object-fit: cover !important;
         }
     }
 </style>
