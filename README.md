@@ -4,7 +4,6 @@
   <a href="https://khoahihiprofile.web.app/"><strong>Website sản phẩm mẫu: khoahihiprofile.web.app</strong></a>
 </p>
 
-Đây là source public mẫu cho một trang bio/profile tĩnh. Bản trong thư mục `github/` đã được che thông tin cá nhân: Firebase config, Discord ID, link mạng xã hội, analytics/user ID và ảnh cá nhân đều đã đổi sang ví dụ hoặc placeholder.
 
 ## Tính năng
 
